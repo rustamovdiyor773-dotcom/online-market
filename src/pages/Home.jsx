@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar.jsx";
-import Productcard from "../components/Productcard.jsx";
+import ProductCard from "../components/Productcard.jsx";
 import Loader from "../components/Loader.jsx";
 import Footer from "../components/Footer.jsx";
 import { fetchProducts } from "../services/api.js";
