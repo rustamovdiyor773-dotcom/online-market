@@ -22,13 +22,13 @@ const ProductDetail = () => {
 
   if (loading) return <Loader />;
   if (!product) return <div className="p-4 text-center">Product not found</div>;
-
+console.log(product.images[0])
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
       <Navbar />
       <div className="max-w-4xl mx-auto p-4 flex flex-col md:flex-row gap-6 flex-grow">
         <img
-          src={product.image}
+          src={product.images[0]}
           alt={product.title}
           className="w-full md:w-1/2 h-64 object-contain bg-white p-4 rounded"
         />
